@@ -1,0 +1,25 @@
+{
+  "name": "ljp_conclusion",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "anticompetitive": {
+        "type": "boolean",
+        "description": "Indica si hubo vulneración a la ley de competencia."
+      },
+      "grounds": {
+        "type": "array",
+        "description": "Razones que justifican si hubo o no vulneración a la ley de competencia.",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "anticompetitive",
+      "grounds"
+    ],
+    "additionalProperties": false
+  },
+  "strict": true
+}

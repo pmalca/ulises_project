@@ -1,0 +1,40 @@
+{
+    "name": "anticompetitive_conduct",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "conducts": {
+          "type": "array",
+          "description": "Lista de conductas anticompetitivas a las que se puede asignar el caso.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "case_facts": {
+                "type": "string",
+                "description": "Hechos del caso que justifican la clasificación de la conducta anticompetitiva."
+              },
+              "conduct_type": {
+                "type": "string",
+                "description": "El tipo de conducta anticompetitiva: PCH, APD o PCV.",
+                "enum": [
+                  "PCH",
+                  "APD",
+                  "PCV"
+                ]
+              }
+            },
+            "required": [
+              "case_facts",
+              "conduct_type"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "conducts"
+      ],
+      "additionalProperties": false
+    }
+  }

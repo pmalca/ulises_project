@@ -1,0 +1,35 @@
+{
+  "name": "subjects_activities",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "subjects": {
+        "type": "array",
+        "description": "Lista de sujetos involucrados.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "string",
+              "description": "Nombre del sujeto investigado, comete la posible conducta anticompetitiva, que consiste en excluir agentes del mercado, o concertar precios, cantidades, clientes, licitaciones o en general cualquier condición comercial"
+            },
+            "description": {
+              "type": "string",
+              "description": "Descripción detallada del sujeto investigado y cómo se relaciona con todo su contexto, las actividades y sus atributos"
+            }
+          },
+          "required": [
+            "subject",
+            "description"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "subjects"
+    ],
+    "additionalProperties": false
+  }
+}
