@@ -40,6 +40,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Authors
 Main Author: Piero Alexis Malca Vilchez.
+
 Contributors: Enzo Rodrigo Gomez Rojas and Cesar Humberto Quiñones Costa.
 
 ---
