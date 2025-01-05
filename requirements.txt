@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+openai==0.28
+anthropic
+python-docx
+jsonschema
+spacy
+openpyxl
